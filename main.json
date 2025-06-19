@@ -1,0 +1,1 @@
+{"id": "animated.checklist", "title": "Animated Checklist", "description": "An animated checklist with a radial SVG progress ring", "vendor": "Custom", "version": "1.0.0", "webcomponents": [{"url": "main.js", "type": "script"}], "properties": {}, "supportedCapabilities": ["value"]}

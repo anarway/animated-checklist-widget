@@ -1,0 +1,128 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+#circleWrapper {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  flex-shrink: 0;
+}
+
+#circleWrapper text {
+  font-size: 20px;
+  fill: #333;
+  transition: all 0.4s ease;
+}
+
+ul#checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: white;
+  padding: 6px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  list-style: none;
+}
+
+ul#checklist li {
+  padding: 4px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: background 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+ul#checklist li.checked {
+  background: #d1e7dd;
+  animation: bounce 0.3s ease;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.1); }
+  60% { transform: scale(0.95); }
+  100% { transform: scale(1.02); }
+}
+
+ul#checklist li span {
+  transition: all 0.3s ease;
+}
+
+.checkmark {
+  transform: translateY(-50%) scale(0);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #198754;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  margin-right: 6px;
+}
+
+li.checked .checkmark {
+  animation: checkmarkPop 1.5s ease forwards;
+}
+
+@keyframes checkmarkPop {
+  0% { transform: scale(4); }
+  100% { transform: scale(1); }
+}
+
+#celebration {
+  display: none;
+  margin-top: 20px;
+  font-size: 24px;
+  color: #198754;
+  animation: fadeIn 1s ease forwards, pop 1s ease infinite alternate;
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pop {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+@keyframes rotateGradient {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#rotatingGradient {
+  animation: rotateGradient 4s linear infinite;
+  transform-origin: center;
+}

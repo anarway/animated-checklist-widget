@@ -1,0 +1,51 @@
+{
+  "id": "custom.animated.checklist",
+  "title": "Animated Checklist with Progress Ring",
+  "description": "Checklist with animated checkmarks and radial progress ring",
+  "vendor": "UserWidget",
+  "version": "1.0.0",
+  "webcomponents": [
+    {
+      "url": "main.js",
+      "type": "script"
+    },
+    {
+      "url": "main.css",
+      "type": "stylesheet"
+    }
+  ],
+  "properties": {
+    "listItems": {
+      "type": "string[]",
+      "title": "Checklist Items",
+      "description": "List of checklist tasks",
+      "default": [
+        "Buy groceries",
+        "Finish homework",
+        "Walk the dog",
+        "Read a book"
+      ]
+    },
+    "ringColor": {
+      "type": "string",
+      "title": "Ring Color",
+      "description": "Color of progress ring",
+      "default": "url(#progressGradient)"
+    },
+    "ringThickness": {
+      "type": "number",
+      "title": "Ring Thickness",
+      "description": "Stroke thickness of the progress ring",
+      "default": 30
+    },
+    "animationSpeed": {
+      "type": "number",
+      "title": "Animation Speed",
+      "description": "Speed of progress number animation in ms",
+      "default": 600
+    }
+  },
+  "supportedCapabilities": [
+    "value"
+  ]
+}
