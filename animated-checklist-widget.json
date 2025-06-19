@@ -1,16 +1,16 @@
 {
   "id": "custom.animated.checklist",
   "title": "Animated Checklist Widget",
-  "description": "Checklist with customizable progress ring, animations, and celebratory message.",
+  "description": "Checklist with animated progress ring and customizable properties, hosted on GitHub.",
   "vendor": "GitHub Integration",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "webcomponents": [
     {
-      "url": "https://your-username.github.io/animated-checklist-widget/main.js",
+      "url": "https://anarway.github.io/animated-checklist-widget/main.js",
       "type": "script"
     },
     {
-      "url": "https://your-username.github.io/animated-checklist-widget/main.css",
+      "url": "https://anarway.github.io/animated-checklist-widget/main.css",
       "type": "stylesheet"
     }
   ],
@@ -18,7 +18,6 @@
     "listItems": {
       "type": "string[]",
       "title": "Checklist Items",
-      "description": "Custom checklist tasks",
       "default": [
         "Buy groceries",
         "Finish homework",
@@ -44,7 +43,6 @@
     "celebrationMessage": {
       "type": "string",
       "title": "Celebration Message",
-      "description": "Message displayed when checklist is 100% complete",
       "default": "All Entities are Consolidated!"
     }
   },
