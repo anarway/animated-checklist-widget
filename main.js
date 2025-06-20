@@ -1,4 +1,4 @@
-const defaultItems = ["Buy groceries", "Finish homework", "Walk the dog", "Read a book"];
+const defaultItems = ["Buy groceries", "Finish homework", "Walk the dog", "Read a book", "Sleep"];
 let ringThickness = 30;
 let animationSpeed = 600;
 let ringColor = "url(#progressGradient)";
